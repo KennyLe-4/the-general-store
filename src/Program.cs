@@ -8,6 +8,7 @@
         int helmetPrice = 3000;
         int foodPrice = 500;
         int presentPrice = 1000;
+        int sneakersPrice = 3000;
 
         Console.WriteLine("------------------------------");
         Console.WriteLine("Welcome to the general store!");
@@ -21,6 +22,8 @@
         Console.WriteLine("B: A protective helmet.");
         Console.WriteLine("C: Some food.");
         Console.WriteLine("D: A present.");
+        Console.WriteLine("E: Nike sneaker.");
+
 
         Console.WriteLine("");
 
@@ -44,6 +47,10 @@
                 break;
             case "D":
                 playerCoins = playerCoins - presentPrice;
+                Console.WriteLine($"Thanks for your purchase! You have {playerCoins} coins remaining.");
+                break;
+            case "E":
+                playerCoins = playerCoins - sneakersPrice;
                 Console.WriteLine($"Thanks for your purchase! You have {playerCoins} coins remaining.");
                 break;
         }
